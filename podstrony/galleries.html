@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+  <head>
+        <title> Portfolio2 Daria </title>
+        <link rel="stylesheet" type="text/css" href="../css/style_g.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="robots"content="all"/>
+        <meta name="description"content="Strona">
+        <mata name="keywords"content="cos tam">
+</head>
+
+ <body>
+   <div class="container">
+     <nav class="navbar">
+       <ul>
+         <li><a href='../home.html' title="Do Strony głównej">| HOME |</a></li>
+         <li><a href='../podstrony/galleries.html' title="Zobacz moją Galerie">| GALLERIES |</a></li>
+         <li><a href='../podstrony/about.html' title="Informacja o autorze">| ABOUT |</a></li>
+         <li><a href='../podstrony/blog.html' title="Mój blog">| BLOG |</a></li>
+         <li><a href='../podstrony/contact.html' title="Skontaktuj się ze mną">| CONTACT |</a></li>
+       </ul>
+     </nav>
+   </div>
+
+<div class="main">
+  <h2> Choose one: </h2>
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+    <button class="btn" onclick="filterSelection('usa')"> USA</button>
+    <button class="btn" onclick="filterSelection('asia')"> Asia</button>
+    <button class="btn" onclick="filterSelection('brazil')"> Brazil</button>
+    <button class="btn" onclick="filterSelection('europe')"> Europe</button>
+  </div>
+
+  <!-- Portfolio Gallery Grid -->
+  <div class="row">
+  <div class="column usa">
+    <div class="content">
+      <img src='../img/USA/001.jpg' alt="usa" style="width:100%"
+      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column usa">
+    <div class="content">
+    <img src='../img/USA/002.jpg' alt="usa" style="width:100%"
+    onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column usa">
+    <div class="content">
+    <img src='../img/USA/003.jpg' alt="usa" style="width:100%"
+    onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column usa">
+    <div class="content">
+    <img src='../img/USA/004.jpg' alt="usa" style="width:100%"
+    onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column usa">
+    <div class="content">
+    <img src='../img/USA/005.jpg' alt="usa" style="width:100%"
+    onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column usa">
+      <div class="content">
+      <img src='../img/USA/006.jpg' alt="usa" style="width:100%"
+      onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+      </div>
+    </div>
+
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/011.jpg' alt="Asia" style="width:100%"
+      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/022.jpg' alt="asia" style="width:100%"
+      onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/033.jpg' alt="asia" style="width:100%"
+      onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/044.jpg' alt="asia" style="width:100%"
+      onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/055.jpg' alt="asia" style="width:100%"
+      onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column asia">
+    <div class="content">
+      <img src='../img/Asia/066.jpg' alt="asia" style="width:100%"
+      onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0111.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0222.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0333.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0444.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0555.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column brazil">
+    <div class="content">
+      <img src='../img/Brazil/0666.jpg' alt="brazil" style="width:100%"
+      onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/111.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/222.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/333.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/444.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/555.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+    </div>
+  </div>
+  <div class="column europe">
+    <div class="content">
+       <img src='../img/Europe/666.jpg' alt="europe" style="width:100%"
+       onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+    </div>
+  </div>
+
+  <!-- MY SLIDES -->
+  <div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+ <!-- ////USA//// -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src='../img/USA/001.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src='../img/USA/002.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src='../img/USA/003.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src='../img/USA/004.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src='../img/USA/005.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src='../img/USA/006.jpg' style="width:100%">
+    </div>
+ <!-- /////ASIA///// -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src='../img/Asia/011.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src='../img/Asia/022.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src='../img/Asia/033.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src='../img/Asia/044.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src='../img/Asia/055.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src='../img/Asia/066.jpg' style="width:100%">
+    </div>
+<!-- ////BRAZIL//// -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src='../img/Brazil/0111.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src='../img/Brazil/0222.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src='../img/Brazil/0333.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src='../img/Brazil/0444.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src='../img/Brazil/0555.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src='../img/Brazil/0666.jpg' style="width:100%">
+    </div>
+<!-- ////Europe/// -->
+    <div class="mySlides">
+      <div class="numbertext">1 / 6</div>
+      <img src='../img/Europe/111.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">2 / 6</div>
+      <img src='../img/Europe/222.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">3 / 6</div>
+      <img src='../img/Europe/333.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">4 / 6</div>
+      <img src='../img/Europe/444.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 6</div>
+      <img src='../img/Europe/555.jpg' style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 6</div>
+      <img src='../img/Europe/666.jpg' style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+    <!-- USA CLICK -->
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/001.jpg' style="width:100%"
+      onclick="currentSlide(1)" alt="USA1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/002.jpg' style="width:100%"
+      onclick="currentSlide(2)" alt="USA2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/003.jpg' style="width:100%"
+      onclick="currentSlide(3)" alt="USA3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/004.jpg' style="width:100%"
+      onclick="currentSlide(4)" alt="USA4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/005.jpg' style="width:100%"
+      onclick="currentSlide(5)" alt="USA5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/USA/006.jpg' style="width:100%"
+      onclick="currentSlide(6)" alt="USA6">
+    </div>
+    <!--ASIA CLICK -->
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/011.jpg' style="width:100%"
+      onclick="currentSlide(1)" alt="Asia1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/022.jpg' style="width:100%"
+      onclick="currentSlide(2)" alt="Asia2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/033.jpg' style="width:100%"
+      onclick="currentSlide(3)" alt="Asia3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/044.jpg' style="width:100%"
+      onclick="currentSlide(4)" alt="Asia4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/055.jpg' style="width:100%"
+      onclick="currentSlide(5)" alt="Asia5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Asia/066.jpg' style="width:100%"
+      onclick="currentSlide(6)" alt="Asia6">
+    </div>
+    <!-- Brazil CLICK -->
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0111.jpg' style="width:100%"
+      onclick="currentSlide(1)" alt="Brazil1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0222.jpg' style="width:100%"
+      onclick="currentSlide(2)" alt="Brazil2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0333.jpg' style="width:100%"
+      onclick="currentSlide(3)" alt="Brazil3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0444.jpg' style="width:100%"
+      onclick="currentSlide(4)" alt="Brazil4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0555.jpg' style="width:100%"
+      onclick="currentSlide(5)" alt="Brazil5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Brazil/0666.jpg' style="width:100%"
+      onclick="currentSlide(6)" alt="Brazil6">
+    <!-- Europe CLICK -->
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/111.jpg' style="width:100%"
+      onclick="currentSlide(1)" alt="Europe1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/222.jpg' style="width:100%"
+      onclick="currentSlide(2)" alt="Europe2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/333.jpg' style="width:100%"
+      onclick="currentSlide(3)" alt="Europe3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/444.jpg' style="width:100%"
+      onclick="currentSlide(4)" alt="Europe4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/555.jpg' style="width:100%"
+      onclick="currentSlide(5)" alt="Europe5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src='../img/Europe/666.jpg' style="width:100%"
+      onclick="currentSlide(6)" alt="Europe6">
+  </div>
+</div>
+
+<!-- END GRID -->
+</div>
+<!-- END MAIN -->
+</div>
+
+<script>
+  filterSelection("all") // Execute the function and show all columns
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("column");
+    if (c == "all") c = "";
+    // Add the "show" class (display:block) to the filtered elements, and remove the "show" class from the elements that are not selected
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  // Show filtered elements
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  // Hide elements that are not selected
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+
+</script>
+ <!-- LIGHT BOX -->
+ <script>
+function openModal() {
+  document.getElementById("myModal").style.display = "block";
+}
+
+function closeModal() {
+  document.getElementById("myModal").style.display = "none";
+}
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+
+
+
+
+
+   </body>
+   </html>
