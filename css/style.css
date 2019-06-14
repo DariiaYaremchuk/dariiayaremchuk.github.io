@@ -62,21 +62,25 @@ img{
 /* /////FOOTER//// */
 .footer{
   background-image: url('../img/2.jpg');
+  height: 200px;
 }
 .footer p{
+  margin-top: 60px;
   text-align: center;
   color: #fff59d;
 }
 .downnav {
   overflow: hidden;
-  background-color: #263238;
+  background-image: url('../img/2.jpg');
 }
 .downnav input[type=text] {
-  float: right;
+
+  float: none;
+  margin-left: 45%;
   padding: 6px;
-  border: none;
+  border: 3px;
   margin-top: 8px;
-  margin-right: 16px;
+  /* margin-right: 16px; */
   font-size: 12px;
 }
 /* @media screen and (max-width: 600px) {
