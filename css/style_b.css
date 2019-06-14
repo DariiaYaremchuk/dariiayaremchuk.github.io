@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 1.4em;
+  vertical-align: baseline;
+  text-decoration: none;
+  outline: 0;
+  }
+
+.container{
+  width: 100%;
+  height: auto;
+}
+.navbar{
+  width: 100%;
+  height: 60px;
+  background-color: #fb8c00;
+  margin-top: -1px;
+}
+.navbar ul{
+  margin-left: 68%;
+}
+.navbar ul li{
+  margin-top: 10px;
+  display: inline-flex;
+  line-height: 80px;
+}
+.navbar ul li a{
+
+  text-decoration: none;
+  font-family: sans-sans-serif;
+  color: #000;
+}
+.navbar ul li a:hover{
+  color: #fff;
+}
+
+body {
+  background-image: url('../img/2.jpg');
+  font-family: Arial;
+  padding: 20px;
+  color: white;
+}
+
+/* Header/Blog Title */
+.header {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+.card p{
+  text-align: left;
+  background: black;
+  color: #fff59d;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.contant {
+
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+   background-color: black;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* ////ICONS//// */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.8;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-pinterest {
+  background: #cb2027;
+  color: white;
+}
+
+/* Footer */
+.footer p{
+  margin-top: 20px;
+  text-align: center;
+  color: #fff59d;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
